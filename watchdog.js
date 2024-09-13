@@ -65,8 +65,8 @@ const handleGdbusEvent = async (data) => {
       if (compareExtensions(disabledExtensions, inactiveExtensions)) {
         console.log('Extensions match, no action taken.');
       } else {
-        await reloadUserExtensions();
         console.log('Extensions do not match, reloaded user extensions.');
+        await reloadUserExtensions();
       }
     } catch (error) {
       console.error(error);
