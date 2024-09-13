@@ -32,7 +32,7 @@ This project provides a daemon to monitor login events from the lock screen to t
 1. Start the daemon using `pm2`:
 
    ```sh
-   pm2 start watchdog.js --name gnome-extensions-watchdog
+   pm2 start watchdog.js --name gnome-extensions-watchdog --watch
    ```
 
 2. Set up `pm2` to start on system boot:
